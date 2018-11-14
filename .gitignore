@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# Ignore generated js and css files
+src/**/*.js
+src/**/*.css
+
+hooks
+platform

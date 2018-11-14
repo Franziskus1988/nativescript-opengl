@@ -1,0 +1,54 @@
+// Import the theme’s variables. If you’re using a color scheme
+// other than “light”, switch the path to the alternative scheme,
+// for example '~nativescript-theme-core/scss/dark'.
+@import '~nativescript-theme-core/scss/dark';
+
+// Customize any of the theme’s variables here, for instance $btn-color: red;
+$gray-darker: #181820;
+$gray-dark: #21212c;
+$gray: #4a4a63;
+$gray-light: lighten($gray, 28%);
+$gray-lighter: lighten($gray, 50%);
+
+$transparent: rgba(0, 0, 0, .075);
+
+$blue-darker: #09172f;
+$blue-dark: #133062;
+$focus: #66afe9;
+$blue: #3e67ad;
+$blue-light: lighten($blue,25%);
+$blue-lighter: lighten($blue,50%); // currently not used
+
+
+// Colors
+$background: $gray-darker;
+$primary: #e6e6e6;
+$secondary: darken($primary, 30%);
+$disabled: darken($primary, 50%);
+$accent: $sky;
+
+// ActionBar
+$ab-background: $background;
+$ab-color: $primary;
+
+// Headings
+$headings-color: $primary;
+
+// SideDrawer
+$item-color-android : #a0a0a0;
+$item-active-background: #2b2b2b;
+$item-active-color: $accent;
+$item-active-icon-color: #fff;
+$item-color-ios: #848484;
+$image-background: #e0e0e0;
+$side-drawer-header-background: $accent;
+$side-drawer-header-brand: #fff;
+$side-drawer-background: #303030;
+
+
+
+// Import the theme’s main ruleset.
+@import '~nativescript-theme-core/scss/index';
+
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.

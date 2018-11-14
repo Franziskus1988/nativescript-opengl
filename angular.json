@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "newProjectRoot": "projects",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  },
+  "projects": {
+    "nativescript-opengl": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "tt"
+    }
+  },
+  "defaultProject": "nativescript-opengl"
+}
