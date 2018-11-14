@@ -7,8 +7,7 @@ import { Triangle } from "./Triangle";
  * other intellectual property laws and treaties. 
  **/
 
- // tslint:disable-next-line:no-any
-declare var de: any;
+
 
 @Interfaces([android.opengl.GLSurfaceView.Renderer])
 export class GLRenderer extends java.lang.Object implements android.opengl.GLSurfaceView.Renderer {
@@ -23,7 +22,7 @@ export class GLRenderer extends java.lang.Object implements android.opengl.GLSur
 
   onSurfaceCreated(_unsued: javax.microedition.khronos.opengles.GL10, _config: javax.microedition.khronos.egl.EGLConfig) {
     android.opengl.GLES20.glClearColor(1.0, 0.0, 0.0, 1.0);
-    this.mTriangle = new de.tomtec.Triangle();
+    this.mTriangle = new Triangle();
   }
 
 

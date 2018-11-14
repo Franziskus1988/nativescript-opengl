@@ -65,4 +65,4 @@ src/**/*.js
 src/**/*.css
 
 hooks
-platform
+platforms

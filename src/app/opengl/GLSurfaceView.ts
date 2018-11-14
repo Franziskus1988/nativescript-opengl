@@ -6,8 +6,7 @@
  * other intellectual property laws and treaties. 
  **/
 
-// tslint:disable-next-line:no-any
-declare var de: any;
+
 
 import { GLRenderer } from "./GLRenderer";
 
@@ -21,7 +20,7 @@ export class GLSurfaceView extends android.opengl.GLSurfaceView {
     this.setEGLContextClientVersion(2);
 
     //User renderer from native android
-    this.mRenderer = new de.tomtec.GLRenderer();
+    this.mRenderer = new GLRenderer();
     this.setRenderer(this.mRenderer);
   }
 }
