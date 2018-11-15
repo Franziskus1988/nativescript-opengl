@@ -1,4 +1,4 @@
-package de.tomtec;
+package com.tns;
 
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;

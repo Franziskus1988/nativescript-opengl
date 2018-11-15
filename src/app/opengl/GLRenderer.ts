@@ -1,12 +1,5 @@
+
 import { Triangle } from "./Triangle";
-
-/**
- * Copyright (C) TomTec Imaging Systems GmbH, 2018. All rights reserved.
- *
- * The source code is protected by copyright laws and international copyright treaties, as well as
- * other intellectual property laws and treaties. 
- **/
-
 
 
 @Interfaces([android.opengl.GLSurfaceView.Renderer])

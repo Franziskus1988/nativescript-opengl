@@ -1,14 +1,8 @@
 
-/**
- * Copyright (C) TomTec Imaging Systems GmbH, 2018. All rights reserved.
- *
- * The source code is protected by copyright laws and international copyright treaties, as well as
- * other intellectual property laws and treaties. 
- **/
-
-
-
 import { GLRenderer } from "./GLRenderer";
+
+// tslint:disable-next-line:no-any
+declare var com: any;
 
 export class GLSurfaceView extends android.opengl.GLSurfaceView {
 
@@ -19,8 +13,18 @@ export class GLSurfaceView extends android.opengl.GLSurfaceView {
 
     this.setEGLContextClientVersion(2);
 
-    //User renderer from native android
+    /**
+     * This doesn't work!
+     */
     this.mRenderer = new GLRenderer();
+
+    /**
+     * When I use a native Java implementation like the one in native/GLRenderer.java
+     * instead it works
+     * 
+     * this.mRenderer = new com.tns.GLRenderer();
+     */
+    
     this.setRenderer(this.mRenderer);
   }
 }
