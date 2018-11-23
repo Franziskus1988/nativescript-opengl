@@ -1,5 +1,6 @@
 
-import { GLRenderer } from "./GLRenderer";
+import { GLRenderer } from "~/app/opengl/GLRenderer";
+import { EGLContextFactory } from "~/app/opengl/EGLContextFactory";
 
 // tslint:disable-next-line:no-any
 declare var com: any;
@@ -12,6 +13,9 @@ export class GLSurfaceView extends android.opengl.GLSurfaceView {
     super(context);
 
     this.setEGLContextClientVersion(2);
+
+    const contextFactory = new EGLContextFactory();
+    this.setEGLContextFactory(contextFactory);
 
     /**
      * This doesn't work!
